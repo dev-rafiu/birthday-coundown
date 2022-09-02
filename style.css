@@ -1,0 +1,109 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  font-size: 1.2rem;
+}
+
+body {
+  font-family: sans-serif;
+  background: #f1f5f8;
+  background-image: radial-gradient(#bfc0c1 7.2%, transparent 0);
+  background-size: 25px 25px;
+}
+
+main {
+  width: min(80%, 500px);
+  margin: 0 auto;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 3rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.alert {
+  color: #fff;
+  text-align: center;
+  padding: 0.1rem;
+}
+
+.birthdate-input,
+.submit-btn {
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.birthdate-input {
+  background: none;
+  width: 100%;
+  font-size: 1.2rem;
+  border: 2px solid #272727;
+}
+label {
+  margin-bottom: 1rem;
+  display: inline-block;
+  /* font-size: 1rem; */
+}
+.submit-btn {
+  border: 2px solid white;
+  width: 50%;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: rgb(50, 134, 223);
+  color: white;
+}
+
+.section-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  visibility: hidden;
+}
+
+.container {
+  /* background: ; */
+  border: 2px solid hsl(46, 100%, 53%);
+  color: #272727;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 0.3rem; */
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+span {
+  font-size: 0.8rem;
+}
+
+.warning {
+  background-color: hsl(0, 100%, 70%);
+}
+.success {
+  background-color: hsl(120, 100%, 69%);
+}
